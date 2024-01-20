@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" href="assets/news-3.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- -----tailwind custom style-- -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "bike-primary": "#E76F51",
+              "bike-primary-bg": "rgba(231, 111, 81, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ------custom styles--- -->
+    <style>
+      .font-manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+    <title>Ca Khaba</title>
+  </head>
+  <body class="w-full font-manrope">
+    <nav class="container mx-auto sticky top-0 z-10">
+      <div class="navbar bg-base-100">
+        <div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base"
+            >
+              <li><a>Home</a></li>
+              <li><a>Black Tea</a></li>
+              <li><a>Green Tea</a></li>
+              <li><a>Others Tea</a></li>
+              <li><a>Shop</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div
+            class="hidden cursor-pointer text-xl lg:text-3xl rounded-full lg:flex"
+          >
+            <img class="w-1/2 rounded-full" src="assets/cup.png" />
+          </div>
+          <a class="btn btn-ghost text-2xl lg:text-3xl"> Ca Khaba</a>
+        </div>
+        <div class="menu menu-horizontal px-1 flex-1 lg:flex navbar-end">
+          <ul class="hidden lg:flex text-base">
+            <li><a>Home</a></li>
+            <li><a>Black Tea</a></li>
+            <li><a>Green Tea</a></li>
+            <li><a>Others Tea</a></li>
+            <li><a>Shop</a></li>
+            <!-- <li><a>Contact</a></li> -->
+          </ul>
+          <button
+            class="btn btn-error bg-bike-primary text-white text-base lg:text-xl"
+          >
+            Login
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ------Banner Section--- -->
+    <header class="container mx-auto">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">
+              Explore More<svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                />
+              </svg>
+            </button>
+          </div>
+          <div>
+            <img src="assets/banner.png" class="max-w-sm" />
+            <!-- ----Rating Badges-- -->
+            <div
+              class="-mt-20 flex items-center gap-4 bg-white drop-shadow-lg p-4 w-56 rounded-lg"
+            >
+              <div class="rating">
+                <input
+                  type="radio"
+                  name="rating-2"
+                  class="mask mask-star-2 bg-orange-400"
+                  checked
+                />
+              </div>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- -------Main Content----- -->
+    <main class="container mx-auto"></main>
+    <!-- --Footer---- -->
+    <footer class="footer p-10 bg-neutral text-neutral-content"></footer>
+  </body>
+</html>
