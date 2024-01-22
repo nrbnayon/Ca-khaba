@@ -1,7 +1,8 @@
 # Ca Khaba Website HTML Code
 
 This repository contains the HTML code for the Ca Khaba website. The website is designed for a tea house, featuring sections such as a navigation bar, banner, featured products, information about the tea, client testimonials, and a footer.
-[Live]_(https://nrbnayon.github.io/Ca-khaba/)
+
+### [Live](https://nrbnayon.github.io/Ca-khaba/)
 
 ## Table of Contents
 
